@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+// import Image from "next/image";
 
 // Section container variants
 const sectionVariants = cva("py-20", {
@@ -113,13 +113,18 @@ const SolutionCard = ({
       {...props}
     >
       <div className="flex flex-col justify-center items-center">
-        <Image
+        <img
+          src={solution.image}
+          alt="Medital"
+          className="w-auto h-auto max-w-full max-h-full mb-10 transition-transform duration-300 hover:scale-110"
+        />
+        {/* <Image
           src={solution.image}
           alt="Medital"
           width={500}
           height={500}
           className="mb-10 transition-transform duration-300 hover:scale-110"
-        />
+        /> */}
         <h6 className="text-lg font-bold mb-4 capitalize">{solution.name}</h6>
         <p className="text-center text-[#656565] text-[15px]">
           {solution.description}

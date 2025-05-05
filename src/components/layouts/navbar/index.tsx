@@ -2,7 +2,7 @@
 
 import React from "react";
 import clsx from "clsx";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import {
@@ -35,13 +35,14 @@ export default function Navbar({ logo, menus }: NavbarProps) {
   return (
     <>
       <nav className="flex gap-[32px] items-center justify-between px-8 py-4">
-        <Image
+        <img src={logo.src} alt={logo.alt} className="w-14 h-14" />
+        {/* <Image
           src={logo.src}
           alt={logo.alt}
           width={logo.width}
           height={logo.height}
           priority
-        />
+        /> */}
 
         {!isDesktop && (
           <Drawer
@@ -80,7 +81,10 @@ export default function Navbar({ logo, menus }: NavbarProps) {
         )}
 
         {isDesktop && (
-          <ul className="hidden lg:flex gap-[28] items-center sm:items-start p-4">
+          <ul
+            className="hidden lg:flex gap-[28] items-center sm:items-start p-4"
+            suppressHydrationWarning
+          >
             {menus.map((menu) => (
               <Link
                 key={menu.name}

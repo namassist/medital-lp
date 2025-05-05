@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import MainLayout from "@/components/layouts/main";
 import { Metadata } from "next";
 import { servicesMedibook, solutionsMedibook } from "@/constant";
@@ -35,7 +35,7 @@ export default function Medibook() {
     <MainLayout>
       <Hero backgroundImage="/medibook-2048x979.png" position="centerLeft">
         <HeroContent width="md">
-          <HeroTitle size="2xl" variant="default" weight="semibold">
+          <HeroTitle size="xl" variant="default" weight="semibold">
             Medibook
           </HeroTitle>
           <HeroSubtitle>All in One Solution for Healthcare System</HeroSubtitle>
@@ -72,13 +72,18 @@ export default function Medibook() {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <Image
+              <img
+                src="/stethoscope-patient-information-1-1536x1025.webp"
+                alt="Medibook"
+                className="w-auto h-auto max-w-full max-h-full"
+              />
+              {/* <Image
                 className="w-full"
                 src="/stethoscope-patient-information-1-1536x1025.webp"
                 alt="Medibook"
                 width={500}
                 height={500}
-              />
+              /> */}
             </div>
           </div>
         </div>

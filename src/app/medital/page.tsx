@@ -36,7 +36,7 @@ export default function Medital() {
     <MainLayout>
       <Hero backgroundImage="/medital-2048x979.png" position="centerLeft">
         <HeroContent width="md">
-          <HeroTitle size="2xl" variant="default" weight="semibold">
+          <HeroTitle size="xl" variant="default" weight="semibold">
             Medital
           </HeroTitle>
           <HeroSubtitle>

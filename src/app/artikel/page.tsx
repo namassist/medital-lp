@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import Image from "next/image";
+// import Image from "next/image";
 import MainLayout from "@/components/layouts/main";
 import { ChevronsRight } from "lucide-react";
 import Link from "next/link";
@@ -13,15 +13,20 @@ export const metadata: Metadata = {
 export default function Artikel() {
   return (
     <MainLayout>
-      <section className="py-10 bg-[#F5F5F5] px-8">
-        <div className="bg-white p-10 space-y-5 border-b-[1px]">
-          <Image
+      <section className="py-10 bg-[#F5F5F5] px-4 lg:px-8">
+        <div className="bg-white p-5 lg:p-10 space-y-5 border-b-[1px]">
+          <img
+            src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
+            alt="Medibook Image"
+            className="w-auto h-auto max-w-full max-h-full"
+          />
+          {/* <Image
             src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
             alt="Medibook"
             sizes="100vw"
             width={1200}
             height={1200}
-          />
+          /> */}
           <h4 className="text-3xl text-[#3a3a3a]">
             EHR: Bagaimana Cara Memilih Vendor yang tepat?
           </h4>
@@ -40,13 +45,18 @@ export default function Artikel() {
           </Link>
         </div>
         <div className="bg-white p-10 space-y-5 border-b-[1px]">
-          <Image
+          <img
+            src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
+            alt="Medibook Image"
+            className="w-auto h-auto max-w-full max-h-full"
+          />
+          {/* <Image
             src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
             alt="Medibook"
             sizes="100vw"
             width={1200}
             height={1200}
-          />
+          /> */}
           <h4 className="text-3xl text-[#3a3a3a]">
             EHR: Bagaimana Cara Memilih Vendor yang tepat?
           </h4>
@@ -65,13 +75,18 @@ export default function Artikel() {
           </Link>
         </div>
         <div className="bg-white p-10 space-y-5 border-b-[1px]">
-          <Image
+          <img
+            src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
+            alt="Medibook Image"
+            className="w-auto h-auto max-w-full max-h-full"
+          />
+          {/* <Image
             src="/Aplikasi-Booking-Dokter-di-Rumah-Sakit.webp"
             alt="Medibook"
             sizes="100vw"
             width={1200}
             height={1200}
-          />
+          /> */}
           <h4 className="text-3xl text-[#3a3a3a]">
             EHR: Bagaimana Cara Memilih Vendor yang tepat?
           </h4>

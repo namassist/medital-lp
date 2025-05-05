@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 
@@ -379,7 +379,6 @@ const ValueItem = ({
   padding,
   variant,
   hover,
-  iconSize = 50,
   className,
   ...props
 }: ValueItemComponentProps) => {
@@ -390,13 +389,18 @@ const ValueItem = ({
       {...props}
     >
       <div className="flex flex-col justify-center items-center">
-        <Image
+        <img
+          src="/info-box-icon-21.png"
+          alt={item.title}
+          className="w-auto h-auto max-w-full max-h-full mb-6"
+        />
+        {/* <Image
           src="/info-box-icon-21.png"
           alt={item.title}
           width={iconSize}
           height={iconSize}
           className="mb-6"
-        />
+        /> */}
         <h6 className={cn(valueItemTitleVariants())}>{item.title}</h6>
         <p className={cn(valueItemDescriptionVariants())}>{item.description}</p>
       </div>
